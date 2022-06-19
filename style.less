@@ -1,0 +1,170 @@
+// Variables
+
+// Layout
+
+@padding: 20px;
+
+// Colors
+
+@white: hsl(0, 0%, 100%);
+@black: hsl(0, 0%, 0%);
+@dark-gray: hsl(0, 0%, 55%);
+@very-dark-gray: hsl(0, 0%, 41%);
+
+// Typography
+
+@font-size: 15px;
+@alata-font: 'Alata', sans-serif;
+@josefin-sans-font: 'Josefin Sans', sans-serif;
+
+// Usages
+
+* {
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: @josefin-sans-font;
+    color: @black;
+}
+
+#header {
+    background: url("./images/mobile/image-hero.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    padding: @padding;
+
+    h1 {
+        color: @white;
+        border: 1px solid @white;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+#main {
+
+    h2 {
+        color: @black;
+    }
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: @padding;
+
+    padding: @padding;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    text-align: center;
+
+    p {
+        font-family: @alata-font;
+        text-transform: none;
+        color: @dark-gray;
+        font-weight: 400;
+    }
+
+}
+
+#creations-section {
+    a {
+        border: 1px solid @black;
+        
+    }
+
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "list"
+    "see-all";
+
+    h2 {
+        grid-area: title;
+    }
+
+}
+
+#list {
+    grid-area: list;
+
+    a {
+        color: @white;
+        border: none;
+    }
+}
+
+.creation {
+    text-align: left;
+    padding: @padding;
+    background-size: cover;
+}
+
+#deep-earth {
+    background-image: url("./images/mobile/image-deep-earth.jpg");
+}
+
+#night-arcade {
+    background-image: url("./images/mobile/image-night-arcade.jpg");
+}
+
+#soccer-team {
+    background-image: url("./images/mobile/image-soccer-team.jpg");
+}
+
+#the-grid {
+    background-image: url("./images/mobile/image-grid.jpg");
+}
+
+#from-up-above {
+    background-image: url("./images/mobile/image-from-above.jpg");
+}
+
+#pocket-borealis {
+    background-image: url("./images/mobile/image-pocket-borealis.jpg");
+}
+
+#the-curiosity {
+    background-image: url("./images/mobile/image-curiosity.jpg");
+}
+
+#make-it-fisheye {
+    background-image: url("./images/mobile/image-fisheye.jpg");
+}
+
+#footer {
+    padding: @padding;
+    background-color: @black;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: @padding;
+
+    .ftr-link {
+        color: @white;
+    }
+
+    span {
+        color: @very-dark-gray;
+    }
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: @dark-gray;
+    }
+}
